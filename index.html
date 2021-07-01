@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<script src="https://kit.fontawesome.com/328878d912.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+<title>Amazon Login Replica</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-sm-3 col-md-4 d-md-block"></div>
+        <div class="col-sm-6 col-md-4">
+            <!-- Logo Begin -->
+            <div id="logo">
+                <img src="http://via.placeholder.com/103x31">
+            </div>
+            <!-- Logo End -->
+            <!-- Authentication Form Begin -->
+            <div class="card">
+                <div class="card-body">
+                  <h1 class="signin">Sign-In</h1>
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label form">Email (phone for mobile accounts)</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1">
+                    </div>
+                    <div class="mb-3">
+                        <div class="col-sm float-start form"><label for="exampleInputPassword1" class="form-label form">Password</label></div>
+                        <div class="col-sm float-end form-link"><a class="text-decoration-none" href="#">Forgot Password</a></div>
+                      
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-warning form-control border-secondary form-button-font">Submit</button>
+                    <!-- Modal Button - Need Help? (See Modal at bottom of file) -->
+                    <div id="help"><a class="text-decoration-none form-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">&#129170; Need help?</a></div>
+                  </form>
+                </div>
+            </div>
+            <!-- Authentication Form End -->
+            <!-- Create Account Area Begin -->
+            <div id="create-account">
+                <h2>
+                    <span class="border"></span>
+                    <span class="text">New to Amazon?</span>
+                </h2>
+                <button type="submit" class="btn btn-secondary form-control border-dark form-button-font">Create your Amazon account</button>
+            </div>
+            <!-- Create Account Area End -->
+        </div>
+        <div class="col-sm-3 col-md-4 d-md-block"></div>
+    </div>
+    <!-- Footer Begin -->
+    <hr/>
+    <div id="footer">
+        <div id="footer-links">
+            <a class="text-decoration-none" link href="#">Conditions of Use</a>
+            <span class="separator"></span>
+            <a class="text-decoration-none" link href="#">Privacy Notice</a>
+            <span class="separator"></span>
+            <a class="text-decoration-none" link href="#">Help</a>
+        </div>
+        <div id="copyright">
+            &copy; 1996-2018, Amazon, inc. or it's affiliates
+        </div>
+    </div>
+    <!-- Footer End -->
+
+<!-- Modal - Need Help? - Begin -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Fixing things is quick & easy</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>The bot quickly fixes your problem or connects you to someone who can.</p>
+            <div class="chat">
+                <button type="button" class="btn btn-warning border-secondary chat">Start chatting now</button>
+            </div>
+            <div id="phone">
+                <i class="fas fa-phone-square"></i> Need help over phone? <a class="text-decoration-none" href="#">We can call you.</a>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary border-dark" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal - Need Help? - End -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"></script>
+</body>
+</html>
